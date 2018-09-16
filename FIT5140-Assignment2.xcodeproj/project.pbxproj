@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02EC6123AC83A5B464214768 /* Pods_FIT5140_Assignment2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55007F38109A0AA9B1B4CDB9 /* Pods_FIT5140_Assignment2Tests.framework */; };
+		0A3337E5214CF34500DF4B8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A3337E4214CF34500DF4B8B /* GoogleService-Info.plist */; };
+		0A8F1D06214E308F002A3290 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F1D05214E308F002A3290 /* DataTableViewController.swift */; };
+		0A8F1D08214E317A002A3290 /* DataViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F1D07214E317A002A3290 /* DataViewCell.swift */; };
+		0A8F1D0A214E33D6002A3290 /* Raspio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F1D09214E33D6002A3290 /* Raspio.swift */; };
 		A70C2549214CE0C900596BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70C2548214CE0C900596BBB /* AppDelegate.swift */; };
 		A70C254B214CE0C900596BBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70C254A214CE0C900596BBB /* ViewController.swift */; };
 		A70C254E214CE0C900596BBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70C254C214CE0C900596BBB /* Main.storyboard */; };
@@ -15,6 +20,8 @@
 		A70C2556214CE0CD00596BBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70C2554214CE0CD00596BBB /* LaunchScreen.storyboard */; };
 		A70C2561214CE0CE00596BBB /* FIT5140_Assignment2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70C2560214CE0CE00596BBB /* FIT5140_Assignment2Tests.swift */; };
 		A70C256C214CE0CE00596BBB /* FIT5140_Assignment2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70C256B214CE0CE00596BBB /* FIT5140_Assignment2UITests.swift */; };
+		EFD62BA74930F8604EEC1B9E /* Pods_FIT5140_Assignment2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D2ECFD07006C254B388A97 /* Pods_FIT5140_Assignment2UITests.framework */; };
+		FAA50C5417962243E7902A75 /* Pods_FIT5140_Assignment2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464300C2CD340760FC48A4E6 /* Pods_FIT5140_Assignment2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		027C08C8431C9A47A0D4371A /* Pods-FIT5140-Assignment2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIT5140-Assignment2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIT5140-Assignment2Tests/Pods-FIT5140-Assignment2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		033D02F9DEC7EAE069D24561 /* Pods-FIT5140-Assignment2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIT5140-Assignment2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIT5140-Assignment2UITests/Pods-FIT5140-Assignment2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		0A3337E4214CF34500DF4B8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A8F1D05214E308F002A3290 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
+		0A8F1D07214E317A002A3290 /* DataViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewCell.swift; sourceTree = "<group>"; };
+		0A8F1D09214E33D6002A3290 /* Raspio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raspio.swift; sourceTree = "<group>"; };
+		2A4652BC8601B2E009940EE6 /* Pods-FIT5140-Assignment2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIT5140-Assignment2.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIT5140-Assignment2/Pods-FIT5140-Assignment2.release.xcconfig"; sourceTree = "<group>"; };
+		37D2ECFD07006C254B388A97 /* Pods_FIT5140_Assignment2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIT5140_Assignment2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44605B1A8E66B6B02D1C0005 /* Pods-FIT5140-Assignment2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIT5140-Assignment2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIT5140-Assignment2/Pods-FIT5140-Assignment2.debug.xcconfig"; sourceTree = "<group>"; };
+		464300C2CD340760FC48A4E6 /* Pods_FIT5140_Assignment2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIT5140_Assignment2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55007F38109A0AA9B1B4CDB9 /* Pods_FIT5140_Assignment2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIT5140_Assignment2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70C2545214CE0C900596BBB /* FIT5140-Assignment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FIT5140-Assignment2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70C2548214CE0C900596BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A70C254A214CE0C900596BBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +67,8 @@
 		A70C2567214CE0CE00596BBB /* FIT5140-Assignment2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FIT5140-Assignment2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70C256B214CE0CE00596BBB /* FIT5140_Assignment2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIT5140_Assignment2UITests.swift; sourceTree = "<group>"; };
 		A70C256D214CE0CE00596BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AED74BD5D6BC0A067C0BDE2C /* Pods-FIT5140-Assignment2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIT5140-Assignment2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIT5140-Assignment2UITests/Pods-FIT5140-Assignment2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B900CE764CB2E205DB5BF038 /* Pods-FIT5140-Assignment2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIT5140-Assignment2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIT5140-Assignment2Tests/Pods-FIT5140-Assignment2Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA50C5417962243E7902A75 /* Pods_FIT5140_Assignment2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02EC6123AC83A5B464214768 /* Pods_FIT5140_Assignment2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +92,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD62BA74930F8604EEC1B9E /* Pods_FIT5140_Assignment2UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55995CB10433C2875281D061 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44605B1A8E66B6B02D1C0005 /* Pods-FIT5140-Assignment2.debug.xcconfig */,
+				2A4652BC8601B2E009940EE6 /* Pods-FIT5140-Assignment2.release.xcconfig */,
+				027C08C8431C9A47A0D4371A /* Pods-FIT5140-Assignment2Tests.debug.xcconfig */,
+				B900CE764CB2E205DB5BF038 /* Pods-FIT5140-Assignment2Tests.release.xcconfig */,
+				AED74BD5D6BC0A067C0BDE2C /* Pods-FIT5140-Assignment2UITests.debug.xcconfig */,
+				033D02F9DEC7EAE069D24561 /* Pods-FIT5140-Assignment2UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A70C253C214CE0C900596BBB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +119,8 @@
 				A70C255F214CE0CE00596BBB /* FIT5140-Assignment2Tests */,
 				A70C256A214CE0CE00596BBB /* FIT5140-Assignment2UITests */,
 				A70C2546214CE0C900596BBB /* Products */,
+				55995CB10433C2875281D061 /* Pods */,
+				BD7F6C623ED0CE16B7998F2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,10 +140,14 @@
 				A70C2548214CE0C900596BBB /* AppDelegate.swift */,
 				A70C254A214CE0C900596BBB /* ViewController.swift */,
 				A70C254C214CE0C900596BBB /* Main.storyboard */,
+				0A3337E4214CF34500DF4B8B /* GoogleService-Info.plist */,
 				A70C2552214CE0CD00596BBB /* Assets.xcassets */,
 				A70C2554214CE0CD00596BBB /* LaunchScreen.storyboard */,
 				A70C2557214CE0CD00596BBB /* Info.plist */,
 				A70C254F214CE0C900596BBB /* FIT5140_Assignment2.xcdatamodeld */,
+				0A8F1D05214E308F002A3290 /* DataTableViewController.swift */,
+				0A8F1D07214E317A002A3290 /* DataViewCell.swift */,
+				0A8F1D09214E33D6002A3290 /* Raspio.swift */,
 			);
 			path = "FIT5140-Assignment2";
 			sourceTree = "<group>";
@@ -128,6 +170,16 @@
 			path = "FIT5140-Assignment2UITests";
 			sourceTree = "<group>";
 		};
+		BD7F6C623ED0CE16B7998F2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				464300C2CD340760FC48A4E6 /* Pods_FIT5140_Assignment2.framework */,
+				55007F38109A0AA9B1B4CDB9 /* Pods_FIT5140_Assignment2Tests.framework */,
+				37D2ECFD07006C254B388A97 /* Pods_FIT5140_Assignment2UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A70C2570214CE0CE00596BBB /* Build configuration list for PBXNativeTarget "FIT5140-Assignment2" */;
 			buildPhases = (
+				F996C76DEB19DD05A915A05C /* [CP] Check Pods Manifest.lock */,
 				A70C2541214CE0C900596BBB /* Sources */,
 				A70C2542214CE0C900596BBB /* Frameworks */,
 				A70C2543214CE0C900596BBB /* Resources */,
+				F24CD882F55B911D262D167E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A70C2573214CE0CE00596BBB /* Build configuration list for PBXNativeTarget "FIT5140-Assignment2Tests" */;
 			buildPhases = (
+				4949E4622CE2FCD335BB6D30 /* [CP] Check Pods Manifest.lock */,
 				A70C2558214CE0CE00596BBB /* Sources */,
 				A70C2559214CE0CE00596BBB /* Frameworks */,
 				A70C255A214CE0CE00596BBB /* Resources */,
@@ -170,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A70C2576214CE0CE00596BBB /* Build configuration list for PBXNativeTarget "FIT5140-Assignment2UITests" */;
 			buildPhases = (
+				958C8B43B8B5598CF0C77C5A /* [CP] Check Pods Manifest.lock */,
 				A70C2563214CE0CE00596BBB /* Sources */,
 				A70C2564214CE0CE00596BBB /* Frameworks */,
 				A70C2565214CE0CE00596BBB /* Resources */,
@@ -233,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A70C2556214CE0CD00596BBB /* LaunchScreen.storyboard in Resources */,
+				0A3337E5214CF34500DF4B8B /* GoogleService-Info.plist in Resources */,
 				A70C2553214CE0CD00596BBB /* Assets.xcassets in Resources */,
 				A70C254E214CE0C900596BBB /* Main.storyboard in Resources */,
 			);
@@ -254,14 +311,102 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4949E4622CE2FCD335BB6D30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FIT5140-Assignment2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		958C8B43B8B5598CF0C77C5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FIT5140-Assignment2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F24CD882F55B911D262D167E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FIT5140-Assignment2/Pods-FIT5140-Assignment2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FIT5140-Assignment2/Pods-FIT5140-Assignment2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F996C76DEB19DD05A915A05C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FIT5140-Assignment2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A70C2541214CE0C900596BBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A70C254B214CE0C900596BBB /* ViewController.swift in Sources */,
+				0A8F1D06214E308F002A3290 /* DataTableViewController.swift in Sources */,
 				A70C2549214CE0C900596BBB /* AppDelegate.swift in Sources */,
 				A70C2551214CE0C900596BBB /* FIT5140_Assignment2.xcdatamodeld in Sources */,
+				0A8F1D08214E317A002A3290 /* DataViewCell.swift in Sources */,
+				0A8F1D0A214E33D6002A3290 /* Raspio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +577,7 @@
 		};
 		A70C2571214CE0CE00596BBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44605B1A8E66B6B02D1C0005 /* Pods-FIT5140-Assignment2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +596,7 @@
 		};
 		A70C2572214CE0CE00596BBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A4652BC8601B2E009940EE6 /* Pods-FIT5140-Assignment2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +615,7 @@
 		};
 		A70C2574214CE0CE00596BBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 027C08C8431C9A47A0D4371A /* Pods-FIT5140-Assignment2Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +636,7 @@
 		};
 		A70C2575214CE0CE00596BBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B900CE764CB2E205DB5BF038 /* Pods-FIT5140-Assignment2Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +657,7 @@
 		};
 		A70C2577214CE0CE00596BBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED74BD5D6BC0A067C0BDE2C /* Pods-FIT5140-Assignment2UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +677,7 @@
 		};
 		A70C2578214CE0CE00596BBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 033D02F9DEC7EAE069D24561 /* Pods-FIT5140-Assignment2UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
