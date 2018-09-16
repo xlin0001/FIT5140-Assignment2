@@ -10,13 +10,38 @@ import UIKit
 import FirebaseDatabase
 
 class DataTableViewController: UITableViewController {
-    private var respios : [Raspio] = []
-    private var respioRef = Database.database().reference().child("raspio")
-    private var channelRefHandle: DatabaseHandle?
+    private var raspios : [Raspio] = []
+    private var raspioRef = Database.database().reference().child("raspio")
+    private var raspioRefHandle: DatabaseHandle?
 
+    
+    private func observeRapios(){
+        raspioRefHandle = raspioRef.observe(.childAdded, with: {
+            (snapshot) -> Void in
+            let data = snapshot.value as! Dictionary<String, AnyObject>
+            let id = snapshot.key
+            let red = data["red"] as! String?
+            let blue = data["blue"] as! String?
+            let green = data["green"] as! String?
+            let temp = data["temp"] as! String?
+            let pressure = data["pressure"] as! String?
+            let altimeter = data["altimeter"] as! String?
+            if let name = data["name"] as! String?, name.count > 0 {
+                self.raspios.append(Raspio(id: id, name: name, red: red!,blue: blue!,green: green!,temp: temp!,pressure: pressure!, altimeter: altimeter!))
+                self.tableView.reloadData()
+            } else {
+                print ("error")
+            }
+        })
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        observeRapios()
+    }
+    deinit {
+        if let refHandle = raspioRefHandle{
+            raspioRef.removeObserver(withHandle: refHandle)
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -33,23 +58,29 @@ class DataTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return raspios.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath) as! DataViewCell
+        cell.tempLabel.text = raspios[indexPath.row].temp
+        cell.alti.text = raspios[indexPath.row].altimeter
+        cell.pressLabel.text = raspios[indexPath.row].pressure
+        let rgb = "\(raspios[indexPath.row].red) , \(raspios[indexPath.row].green), \(raspios[indexPath.row].blue)"
+        cell.colorLabel.text = rgb
+        
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
