@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		02EC6123AC83A5B464214768 /* Pods_FIT5140_Assignment2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55007F38109A0AA9B1B4CDB9 /* Pods_FIT5140_Assignment2Tests.framework */; };
+		0A159D2921511A8E001BCACC /* Flower+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A159D2721511A8E001BCACC /* Flower+CoreDataClass.swift */; };
+		0A159D2A21511A8E001BCACC /* Flower+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A159D2821511A8E001BCACC /* Flower+CoreDataProperties.swift */; };
 		0A3337E5214CF34500DF4B8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A3337E4214CF34500DF4B8B /* GoogleService-Info.plist */; };
 		0A8F1D06214E308F002A3290 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F1D05214E308F002A3290 /* DataTableViewController.swift */; };
 		0A8F1D08214E317A002A3290 /* DataViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F1D07214E317A002A3290 /* DataViewCell.swift */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		027C08C8431C9A47A0D4371A /* Pods-FIT5140-Assignment2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIT5140-Assignment2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIT5140-Assignment2Tests/Pods-FIT5140-Assignment2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		033D02F9DEC7EAE069D24561 /* Pods-FIT5140-Assignment2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIT5140-Assignment2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIT5140-Assignment2UITests/Pods-FIT5140-Assignment2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		0A159D2721511A8E001BCACC /* Flower+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Flower+CoreDataClass.swift"; path = "/Users/givemepass/Documents/FIT5140-Assignment2/FIT5140-Assignment2/Flower+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		0A159D2821511A8E001BCACC /* Flower+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Flower+CoreDataProperties.swift"; path = "/Users/givemepass/Documents/FIT5140-Assignment2/FIT5140-Assignment2/Flower+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		0A3337E4214CF34500DF4B8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A8F1D05214E308F002A3290 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
 		0A8F1D07214E317A002A3290 /* DataViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewCell.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				A70C2548214CE0C900596BBB /* AppDelegate.swift */,
+				0A159D2721511A8E001BCACC /* Flower+CoreDataClass.swift */,
+				0A159D2821511A8E001BCACC /* Flower+CoreDataProperties.swift */,
 				A70C254A214CE0C900596BBB /* ViewController.swift */,
 				A70C254C214CE0C900596BBB /* Main.storyboard */,
 				0A3337E4214CF34500DF4B8B /* GoogleService-Info.plist */,
@@ -403,7 +409,9 @@
 			files = (
 				A70C254B214CE0C900596BBB /* ViewController.swift in Sources */,
 				0A8F1D06214E308F002A3290 /* DataTableViewController.swift in Sources */,
+				0A159D2921511A8E001BCACC /* Flower+CoreDataClass.swift in Sources */,
 				A70C2549214CE0C900596BBB /* AppDelegate.swift in Sources */,
+				0A159D2A21511A8E001BCACC /* Flower+CoreDataProperties.swift in Sources */,
 				A70C2551214CE0C900596BBB /* FIT5140_Assignment2.xcdatamodeld in Sources */,
 				0A8F1D08214E317A002A3290 /* DataViewCell.swift in Sources */,
 				0A8F1D0A214E33D6002A3290 /* Raspio.swift in Sources */,
