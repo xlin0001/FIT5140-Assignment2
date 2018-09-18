@@ -8,39 +8,38 @@
 
 import UIKit
 import FirebaseDatabase
+import Firebase
 
 class DataTableViewController: UITableViewController {
     private var raspios : [Raspio] = []
-    private var raspioRef = Database.database().reference().child("raspio")
+    private var raspioRef: DatabaseReference?
     private var raspioRefHandle: DatabaseHandle?
-
     
-    private func observeRapios(){
-        raspioRefHandle = raspioRef.observe(.childAdded, with: {
-            (snapshot) -> Void in
-            let data = snapshot.value as! Dictionary<String, AnyObject>
-            let id = snapshot.key
-            let red = data["red"] as! String?
-            let blue = data["blue"] as! String?
-            let green = data["green"] as! String?
-            let temp = data["temp"] as! String?
-            let pressure = data["pressure"] as! String?
-            let altimeter = data["altimeter"] as! String?
-            if let name = data["name"] as! String?, name.count > 0 {
-                self.raspios.append(Raspio(id: id, name: name, red: red!,blue: blue!,green: green!,temp: temp!,pressure: pressure!, altimeter: altimeter!))
-                self.tableView.reloadData()
-            } else {
-                print ("error")
-            }
-        })
-    }
+    var firebaseSensorDataList =  [FirebaseSensorData]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        // after the view been loaded, we should set up the respio database ref,
+        // note that this should be done after the FirebaseApp has been set up
+        // and this is the problem of the initial crash...
+        raspioRef = Database.database().reference().child("raspio")
         observeRapios()
+        
+        raspioRef?.observe(DataEventType.value, with: {(snapshot) in
+            if snapshot.childrenCount > 0{
+                self.firebaseSensorDataList.removeAll()
+                
+                for firebaseSensorData in snapshot.children.allObjects as! [DataSnapshot]{
+                    var bool = firebaseSensorData.hasChild("blue")
+                }
+            }
+        })
+        
     }
+    
     deinit {
         if let refHandle = raspioRefHandle{
-            raspioRef.removeObserver(withHandle: refHandle)
+            raspioRef?.removeObserver(withHandle: refHandle)
         }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -79,6 +78,26 @@ class DataTableViewController: UITableViewController {
         // Configure the cell...
 
         return cell
+    }
+    
+    private func observeRapios(){
+        raspioRefHandle = raspioRef?.observe(.childAdded, with: {
+            (snapshot) -> Void in
+            let data = snapshot.value as! Dictionary<String, AnyObject>
+            let id = snapshot.key
+            let red = data["red"] as! String?
+            let blue = data["blue"] as! String?
+            let green = data["green"] as! String?
+            let temp = data["temp"] as! String?
+            let pressure = data["pressure"] as! String?
+            let altimeter = data["altimeter"] as! String?
+            if let name = data["name"] as! String?, name.count > 0 {
+                self.raspios.append(Raspio(id: id, name: name, red: red!,blue: blue!,green: green!,temp: temp!,pressure: pressure!, altimeter: altimeter!))
+                self.tableView.reloadData()
+            } else {
+                print ("error")
+            }
+        })
     }
     
 

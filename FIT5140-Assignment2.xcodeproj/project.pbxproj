@@ -20,6 +20,7 @@
 		A70C2556214CE0CD00596BBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70C2554214CE0CD00596BBB /* LaunchScreen.storyboard */; };
 		A70C2561214CE0CE00596BBB /* FIT5140_Assignment2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70C2560214CE0CE00596BBB /* FIT5140_Assignment2Tests.swift */; };
 		A70C256C214CE0CE00596BBB /* FIT5140_Assignment2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70C256B214CE0CE00596BBB /* FIT5140_Assignment2UITests.swift */; };
+		A7D2DEAE2151144E009775DB /* FirebaseSensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2DEAD2151144E009775DB /* FirebaseSensorData.swift */; };
 		EFD62BA74930F8604EEC1B9E /* Pods_FIT5140_Assignment2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D2ECFD07006C254B388A97 /* Pods_FIT5140_Assignment2UITests.framework */; };
 		FAA50C5417962243E7902A75 /* Pods_FIT5140_Assignment2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464300C2CD340760FC48A4E6 /* Pods_FIT5140_Assignment2.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		A70C2567214CE0CE00596BBB /* FIT5140-Assignment2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FIT5140-Assignment2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70C256B214CE0CE00596BBB /* FIT5140_Assignment2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIT5140_Assignment2UITests.swift; sourceTree = "<group>"; };
 		A70C256D214CE0CE00596BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7D2DEAD2151144E009775DB /* FirebaseSensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSensorData.swift; sourceTree = "<group>"; };
 		AED74BD5D6BC0A067C0BDE2C /* Pods-FIT5140-Assignment2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIT5140-Assignment2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIT5140-Assignment2UITests/Pods-FIT5140-Assignment2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B900CE764CB2E205DB5BF038 /* Pods-FIT5140-Assignment2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIT5140-Assignment2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIT5140-Assignment2Tests/Pods-FIT5140-Assignment2Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,7 +142,6 @@
 				A70C2548214CE0C900596BBB /* AppDelegate.swift */,
 				A70C254A214CE0C900596BBB /* ViewController.swift */,
 				A70C254C214CE0C900596BBB /* Main.storyboard */,
-				0A3337E4214CF34500DF4B8B /* GoogleService-Info.plist */,
 				A70C2552214CE0CD00596BBB /* Assets.xcassets */,
 				A70C2554214CE0CD00596BBB /* LaunchScreen.storyboard */,
 				A70C2557214CE0CD00596BBB /* Info.plist */,
@@ -148,6 +149,8 @@
 				0A8F1D05214E308F002A3290 /* DataTableViewController.swift */,
 				0A8F1D07214E317A002A3290 /* DataViewCell.swift */,
 				0A8F1D09214E33D6002A3290 /* Raspio.swift */,
+				0A3337E4214CF34500DF4B8B /* GoogleService-Info.plist */,
+				A7D2DEAD2151144E009775DB /* FirebaseSensorData.swift */,
 			);
 			path = "FIT5140-Assignment2";
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				A70C254B214CE0C900596BBB /* ViewController.swift in Sources */,
 				0A8F1D06214E308F002A3290 /* DataTableViewController.swift in Sources */,
 				A70C2549214CE0C900596BBB /* AppDelegate.swift in Sources */,
+				A7D2DEAE2151144E009775DB /* FirebaseSensorData.swift in Sources */,
 				A70C2551214CE0C900596BBB /* FIT5140_Assignment2.xcdatamodeld in Sources */,
 				0A8F1D08214E317A002A3290 /* DataViewCell.swift in Sources */,
 				0A8F1D0A214E33D6002A3290 /* Raspio.swift in Sources */,
